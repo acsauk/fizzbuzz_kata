@@ -1,13 +1,13 @@
 require 'fizzbuzz_kata'
 require 'pry'
 
-divisible_by_three_fixture = [3,6,9]
-divisible_by_five_fixture = [5,10,20]
-divisible_by_fifteen_fixture = [15,30,45]
-divisible_by_any_number_fixture = [[3,3],[4,4],[5,5]]
+divisible_by_three_fixture = [3,6,9,12]
+divisible_by_five_fixture = [5,10,20,25]
+divisible_by_fifteen_fixture = [15,30,45,60]
+divisible_by_any_number_fixture = [[3,3],[4,4],[5,5],[6,6]]
 
-not_divisible_by_any_number_fixture = [[2,3],[3,4],[4,5]]
-not_divisible_by_fixture = [2,1,4]
+not_divisible_by_any_number_fixture = [[2,3],[3,4],[4,5],[5,6]]
+not_divisible_by_fixture = [2,1,4,7]
 
 describe 'FizzBuzz' do
   context 'knows when a number is divisible by' do
