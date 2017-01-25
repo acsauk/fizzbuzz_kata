@@ -15,10 +15,10 @@ def is_divisible_by(number, divisor)
 end
 
 def game(number)
-  case number
-  when 3
+  case
+  when is_divisible_by_three(number)
     'Fizz'
-  when 5
+  when is_divisible_by_five(number)
     'Buzz'
   end
 end
