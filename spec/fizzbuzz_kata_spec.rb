@@ -80,6 +80,12 @@ describe 'FizzBuzz' do
         expect(game(number)).to eq 'FizzBuzz'
       end
     end
+
+    it 'says the number for any other number' do
+      not_divisible_by_fixture.each do |number|
+        expect(game(number)).to eq number
+      end
+    end
   end
 
 end
