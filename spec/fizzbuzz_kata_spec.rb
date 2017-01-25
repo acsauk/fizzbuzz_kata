@@ -1,9 +1,13 @@
 require 'fizzbuzz_kata'
 
+divisible_by_three_fixture = [3,6,9]
+
 describe 'FizzBuzz' do
   context 'knows when a number is divisible by' do
     it 3 do
-      expect(is_divisible_by_three(3)).to eq true
+      divisible_by_three_fixture.each do |number|
+        expect(is_divisible_by_three(number)).to eq true
+      end
       expect(is_divisible_by_three(6)).to eq true
       expect(is_divisible_by_three(9)).to eq true
     end
