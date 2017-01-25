@@ -37,4 +37,10 @@ describe 'FizzBuzz' do
     end
   end
 
+  context 'game' do
+    it 'says Fizz for numbers divisible by 3' do
+      expect(game(3)).to eq 'Fizz'
+    end
+  end
+
 end

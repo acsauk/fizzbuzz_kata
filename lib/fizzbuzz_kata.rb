@@ -13,3 +13,7 @@ end
 def is_divisible_by(number, divisor)
   number % divisor == 0 ? true : false
 end
+
+def game(number)
+  'Fizz'
+end
