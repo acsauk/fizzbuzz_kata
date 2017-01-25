@@ -16,6 +16,8 @@ end
 
 def game(number)
   case
+  when is_divisible_by_fifteen(number)
+    'FizzBuzz'
   when is_divisible_by_three(number)
     'Fizz'
   when is_divisible_by_five(number)
