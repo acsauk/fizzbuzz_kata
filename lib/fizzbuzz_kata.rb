@@ -7,5 +7,5 @@ def is_divisible_by_five(number)
 end
 
 def is_divisible_by_fifteen(number)
-  true
+  number % 15 == 0 ? true : false
 end
