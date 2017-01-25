@@ -41,6 +41,10 @@ describe 'FizzBuzz' do
     it 'says Fizz for numbers divisible by 3' do
       expect(game(3)).to eq 'Fizz'
     end
+
+    it 'says Buzz for numbers divisible by 5' do
+      expect(game(5)).to eq 'Buzz'
+    end
   end
 
 end
