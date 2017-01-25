@@ -22,5 +22,7 @@ def game(number)
     'Fizz'
   when is_divisible_by_five(number)
     'Buzz'
+  else
+    number
   end
 end
