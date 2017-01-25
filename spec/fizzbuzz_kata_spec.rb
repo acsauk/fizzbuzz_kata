@@ -13,6 +13,10 @@ describe 'FizzBuzz' do
     it 15 do
       expect(is_divisible_by_fifteen(15)).to eq true
     end
+
+    it 'knows when any number is divisble by itself' do
+      expect(is_divisible_by(3, 3)).to eq true
+    end
   end
 
   context 'knows when a number is not divisible by' do
@@ -27,9 +31,10 @@ describe 'FizzBuzz' do
     it 15 do
       expect(is_divisible_by_fifteen(2)).to eq false
     end
+
+    it 'knows when any number is not divisble by itself' do
+      expect(is_divisible_by(2, 3)).to eq false
+    end
   end
 
-  it 'knows when any number is divisble by itself' do
-    expect(is_divisible_by(3, 3)).to eq true
-  end
 end
