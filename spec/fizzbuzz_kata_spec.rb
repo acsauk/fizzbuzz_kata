@@ -28,4 +28,8 @@ describe 'FizzBuzz' do
       expect(is_divisible_by_fifteen(2)).to eq false
     end
   end
+
+  it 'knows when any number is divisble by itself' do
+    expect(is_divisible_by(3, 3)).to eq true
+  end
 end
